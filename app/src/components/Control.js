@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Input, ContentContainer, AddButton } from '../Style.css';
 
-const Control = () => {
+const Control = ({ list, setList }) => {
+    const [value, setValue] = useState('');
+    const onAddItem = () => {
+        // eslint-disable-next-line new-parens
+        const timestamp = (new Date).getTime();
+        setList([...list, { value: value, id: `${timestamp}` }]);
+        setValue('');
+    };
     return (
-        <>
-            Control
-        </>
+        <ContentContainer>
+            <Input value={value} onChange={(e) => { setValue(e?.target?.value)}} />
+            <AddButton onClick={onAddItem}>Add</AddButton>
+        </ContentContainer>
     );
 };
 export default Control;
