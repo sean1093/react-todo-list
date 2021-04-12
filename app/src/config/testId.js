@@ -1,0 +1,6 @@
+export const TEST_ID = {
+    TODO_INPUT: 'TODO_INPUT',
+    TODO_ITEM: 'TODO_ITEM',
+    ADD_BUTTON: 'ADD_BUTTON',
+    APP_TITLE: 'APP_TITLE'
+};

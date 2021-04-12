@@ -1,18 +1,28 @@
 import styled from 'styled-components';
 
+const Style = {
+    PADDING: 'padding: 5px;',
+    FLEX_ROW_CENTER: 'display: flex; justify-content: center;'
+}
+
 export const Container = styled.div`
+    ${Style.PADDING}
     display: flex;
     flex-direction: column;
-    padding: 5px;
 `;
 
 export const ContentContainer = styled.div`
-    display: flex;
-    justify-content: center;
+    ${Style.FLEX_ROW_CENTER}
 `;
 
 export const Input = styled.input`
-    width: 40vw;
+    width: 250px;
+`;
+
+export const Title = styled.div`
+    ${Style.FLEX_ROW_CENTER}
+    ${Style.PADDING}
+    font-size: 16px;
 `;
 
 export const AddButton = styled.button`
@@ -21,7 +31,7 @@ export const AddButton = styled.button`
 `;
 
 export const TodoList = styled.ul`
-    margin: 5px;
+    ${Style.PADDING}
 `;
 
 export const TodoItem = styled.li`

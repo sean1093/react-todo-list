@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Input, ContentContainer, AddButton } from '../Style.css';
+import { TEST_ID } from '../config/testId';
 
 const Control = ({ list, setList }) => {
     const [value, setValue] = useState('');
@@ -11,8 +12,17 @@ const Control = ({ list, setList }) => {
     };
     return (
         <ContentContainer>
-            <Input value={value} onChange={(e) => { setValue(e?.target?.value)}} />
-            <AddButton onClick={onAddItem}>Add</AddButton>
+            <Input
+                data-testid={TEST_ID.TODO_INPUT}
+                value={value}
+                onChange={(e) => { setValue(e?.target?.value)}}
+            />
+            <AddButton
+                data-testid={TEST_ID.ADD_BUTTON}
+                onClick={onAddItem}
+            >
+                Add
+            </AddButton>
         </ContentContainer>
     );
 };
