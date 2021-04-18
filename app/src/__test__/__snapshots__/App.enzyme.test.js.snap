@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo App container tests Todo App container should display as expected 1`] = `
+<styled.div>
+  <styled.div
+    data-testid="APP_TITLE"
+  >
+    Todo List Sample
+  </styled.div>
+  <Control
+    list={Array []}
+    setList={[Function]}
+  />
+  <Content
+    list={Array []}
+    setList={[Function]}
+  />
+</styled.div>
+`;
+
+exports[`Todo App container tests Todo App container should display as expected 2`] = `
+<App>
+  <styled.div>
+    <div
+      className="sc-bdvvaa crVrEO"
+    >
+      <styled.div
+        data-testid="APP_TITLE"
+      >
+        <div
+          className="sc-hKwCoD jeypMi"
+          data-testid="APP_TITLE"
+        >
+          Todo List Sample
+        </div>
+      </styled.div>
+      <Control
+        list={Array []}
+        setList={[Function]}
+      >
+        <styled.div>
+          <div
+            className="sc-gsDJrp wlSJp"
+          >
+            <styled.input
+              data-testid="TODO_INPUT"
+              onChange={[Function]}
+              value=""
+            >
+              <input
+                className="sc-dkPtyc gtRBDb"
+                data-testid="TODO_INPUT"
+                onChange={[Function]}
+                value=""
+              />
+            </styled.input>
+            <styled.button
+              data-testid="ADD_BUTTON"
+              onClick={[Function]}
+            >
+              <button
+                className="sc-eCImvq jEtYTQ"
+                data-testid="ADD_BUTTON"
+                onClick={[Function]}
+              >
+                Add
+              </button>
+            </styled.button>
+          </div>
+        </styled.div>
+      </Control>
+      <Content
+        list={Array []}
+        setList={[Function]}
+      >
+        <styled.div>
+          <div
+            className="sc-gsDJrp wlSJp"
+          >
+            <styled.ul>
+              <ul
+                className="sc-jRQAMF kKsXMP"
+              />
+            </styled.ul>
+          </div>
+        </styled.div>
+      </Content>
+    </div>
+  </styled.div>
+</App>
+`;
