@@ -1,3 +1,4 @@
+import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from '../App';
 import { TEST_ID } from '../config/testId';
